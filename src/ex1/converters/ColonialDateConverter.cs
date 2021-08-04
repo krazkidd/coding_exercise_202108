@@ -7,7 +7,7 @@ namespace coding_exercise_202108.ex1
     /// <summary>
     /// JSON converter for dates in month/day/year string format.
     /// </summary>
-    /// <remarks>Not sure what standard (e.g. ANSI) the format is defined it, so I called it "colonial".</remarks>
+    /// <remarks>Not sure what standard (e.g. ANSI) the format is defined in, so I called it "colonial".</remarks>
     public class ColonialDateConverter
         : JsonConverter<DateTime>
     {
