@@ -13,7 +13,9 @@ namespace coding_exercise_202108.ex1
             try
             {
                 //TODO SLOW!!! this is going to throw very often because we don't know what data type to expect.
-                //     i think Newtonsoft can handle this situation more efficiently
+                //     i think Newtonsoft can handle this situation more efficiently (this seems to be a shortcoming
+                //     of .NET's immature JSON serialization code). anyway, there may be cause to inverse the order
+                //     of these so that we expect a string and fall back to checking for a number
                 return new Precipitation(rdr.GetDouble());
             }
             catch (InvalidOperationException)
