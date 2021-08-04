@@ -32,9 +32,6 @@ namespace coding_exercise_202108.ex1
                     return new Precipitation(precipStr);
                 }
             }
-
-            //TODO return something else?
-            return null;
         }
 
         public override void Write(Utf8JsonWriter wrt, Precipitation p, JsonSerializerOptions options)
