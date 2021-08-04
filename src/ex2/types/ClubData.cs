@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 namespace coding_exercise_202108.ex2
 {
     public class ClubData
+        : ISpread<int>
     {
 
         /// <summary>
@@ -87,13 +88,20 @@ namespace coding_exercise_202108.ex2
             set;
         }
 
-        /// <summary>
-        /// The absolute difference between goals for and goals against
-        /// </summary>
-        public int GetGoalSpread()
+        #region ISpread
+
+        public int GetSpread()
         {
+            // the absolute difference between goals for and goals against
             return Math.Abs(GoalsFor - GoalsAgainst);
         }
+
+        public string ToSpreadString()
+        {
+            return String.Format("{0} {1} {2} {3} {4}", Position, Club, GoalsFor, GoalsAgainst, GetSpread());
+        }
+
+        #endregion
 
     }
 }

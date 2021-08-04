@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 namespace coding_exercise_202108.ex1
 {
     public class ClimateData
+        : ISpread<double>
     {
 
         [JsonConverter(typeof(ColonialDateConverter))]
@@ -83,10 +84,19 @@ namespace coding_exercise_202108.ex1
             set;
         }
 
+        #region ISpread
+
         public double GetSpread()
         {
             return Maximum - Minimum;
         }
+
+        public string ToSpreadString()
+        {
+            return String.Format("{0} {1} {2} {3}", Date.ToString(ColonialDateConverter.FORMAT), Maximum, Minimum, GetSpread());
+        }
+
+        #endregion
 
     }
 }
