@@ -1,0 +1,222 @@
+[
+ {
+   "POSITION": 1,
+   "CLUB": "Manchester City",
+   "PLAYED": 38,
+   "WON": 32,
+   "DRAWN": 2,
+   "LOST": 4,
+   "GF": 95,
+   "GA": 23,
+   "POINTS": 98
+ },
+ {
+   "POSITION": 2,
+   "CLUB": "Liverpool",
+   "PLAYED": 38,
+   "WON": 30,
+   "DRAWN": 7,
+   "LOST": 1,
+   "GF": 89,
+   "GA": 22,
+   "POINTS": 97
+ },
+ {
+   "POSITION": 3,
+   "CLUB": "Chelsea",
+   "PLAYED": 38,
+   "WON": 21,
+   "DRAWN": 9,
+   "LOST": 8,
+   "GF": 63,
+   "GA": 39,
+   "POINTS": 72
+ },
+ {
+   "POSITION": 4,
+   "CLUB": "Tottenham Hotspur",
+   "PLAYED": 38,
+   "WON": 23,
+   "DRAWN": 3,
+   "LOST": 13,
+   "GF": 67,
+   "GA": 39,
+   "POINTS": 71
+ },
+ {
+   "POSITION": 5,
+   "CLUB": "Arsenal",
+   "PLAYED": 38,
+   "WON": 21,
+   "DRAWN": 7,
+   "LOST": 10,
+   "GF": 73,
+   "GA": 51,
+   "POINTS": 70
+ },
+ {
+   "POSITION": 7,
+   "CLUB": "Manchester United",
+   "PLAYED": 38,
+   "WON": 19,
+   "DRAWN": 9,
+   "LOST": 10,
+   "GF": 65,
+   "GA": 54,
+   "POINTS": 66
+ },
+ {
+   "POSITION": 7,
+   "CLUB": "Wolverhampton Wolves",
+   "PLAYED": 38,
+   "WON": 16,
+   "DRAWN": 9,
+   "LOST": 13,
+   "GF": 47,
+   "GA": 46,
+   "POINTS": 57
+ },
+ {
+   "POSITION": 8,
+   "CLUB": "Everton",
+   "PLAYED": 38,
+   "WON": 15,
+   "DRAWN": 9,
+   "LOST": 14,
+   "GF": 54,
+   "GA": 46,
+   "POINTS": 54
+ },
+ {
+   "POSITION": 9,
+   "CLUB": "Leicester City",
+   "PLAYED": 38,
+   "WON": 15,
+   "DRAWN": 7,
+   "LOST": 16,
+   "GF": 51,
+   "GA": 48,
+   "POINTS": 52
+ },
+ {
+   "POSITION": 10,
+   "CLUB": "West Ham United",
+   "PLAYED": 38,
+   "WON": 15,
+   "DRAWN": 7,
+   "LOST": 16,
+   "GF": 52,
+   "GA": 55,
+   "POINTS": 52
+ },
+ {
+   "POSITION": 11,
+   "CLUB": "Watford",
+   "PLAYED": 38,
+   "WON": 14,
+   "DRAWN": 8,
+   "LOST": 16,
+   "GF": 52,
+   "GA": 59,
+   "POINTS": 50
+ },
+ {
+   "POSITION": 12,
+   "CLUB": "Crystal Palace",
+   "PLAYED": 38,
+   "WON": 14,
+   "DRAWN": 7,
+   "LOST": 17,
+   "GF": 51,
+   "GA": 53,
+   "POINTS": 49
+ },
+ {
+   "POSITION": 13,
+   "CLUB": "Newcastle United",
+   "PLAYED": 38,
+   "WON": 12,
+   "DRAWN": 9,
+   "LOST": 17,
+   "GF": 42,
+   "GA": 48,
+   "POINTS": 45
+ },
+ {
+   "POSITION": 14,
+   "CLUB": "Bournemouth",
+   "PLAYED": 38,
+   "WON": 13,
+   "DRAWN": 6,
+   "LOST": 19,
+   "GF": 56,
+   "GA": 70,
+   "POINTS": 45
+ },
+ {
+   "POSITION": 15,
+   "CLUB": "Burnley",
+   "PLAYED": 38,
+   "WON": 11,
+   "DRAWN": 7,
+   "LOST": 20,
+   "GF": 45,
+   "GA": 68,
+   "POINTS": 40
+ },
+ {
+   "POSITION": 16,
+   "CLUB": "Southhampton",
+   "PLAYED": 38,
+   "WON": 9,
+   "DRAWN": 12,
+   "LOST": 17,
+   "GF": 45,
+   "GA": 65,
+   "POINTS": 39
+ },
+ {
+   "POSITION": 17,
+   "CLUB": "Brighton and Hove Albion",
+   "PLAYED": 38,
+   "WON": 9,
+   "DRAWN": 9,
+   "LOST": 20,
+   "GF": 35,
+   "GA": 60,
+   "POINTS": 36
+ },
+ {
+   "POSITION": 18,
+   "CLUB": "Cardiff City",
+   "PLAYED": 38,
+   "WON": 10,
+   "DRAWN": 4,
+   "LOST": 24,
+   "GF": 34,
+   "GA": 69,
+   "POINTS": 34
+ },
+ {
+   "POSITION": 19,
+   "CLUB": "Fulham",
+   "PLAYED": 38,
+   "WON": 7,
+   "DRAWN": 5,
+   "LOST": 26,
+   "GF": 34,
+   "GA": 81,
+   "POINTS": 26
+ },
+ {
+   "POSITION": 20,
+   "CLUB": "Huddersfield Town",
+   "PLAYED": 38,
+   "WON": 3,
+   "DRAWN": 7,
+   "LOST": 28,
+   "GF": 22,
+   "GA": 76,
+   "POINTS": 16
+ }
+]
