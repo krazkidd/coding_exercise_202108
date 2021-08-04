@@ -2,7 +2,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace coding_exercise_202108
+namespace coding_exercise_202108.ex1
 {
     public class PrecipitationConverter
         : JsonConverter<Precipitation>
