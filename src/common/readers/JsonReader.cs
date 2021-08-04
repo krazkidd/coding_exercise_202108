@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace coding_exercise_202108
 {
-    public class JsonReader<T>
+    public static class JsonReader
     {
 
-        public T[] ReadFromFile(string filename)
+        public static T[] ReadFromFile<T>(string filename)
         {
             using (StreamReader rdr = new StreamReader(filename))
             {
