@@ -19,13 +19,10 @@ namespace coding_exercise_202108
             V minSpread = data.Min(cd => cd.GetSpread());
             V maxSpread = data.Max(cd => cd.GetSpread());
 
-            //TODO can this be simplified? looks silly
-            Comparer<V> comparer = Comparer<V>.Create(new Comparison<V>((x, y) => x.CompareTo(y)));
-
             // get all items with the min spread value
-            IEnumerable<T> minSpreads = data.Where(cd => comparer.Compare(minSpread, cd.GetSpread()) == 0);
+            IEnumerable<T> minSpreads = data.Where(cd => minSpread.CompareTo(cd.GetSpread()) == 0);
             // get all items with the max spread value
-            IEnumerable<T> maxSpreads = data.Where(cd => comparer.Compare(maxSpread, cd.GetSpread()) == 0);
+            IEnumerable<T> maxSpreads = data.Where(cd => maxSpread.CompareTo(cd.GetSpread()) == 0);
 
             // print all
             foreach (T cd in minSpreads.Concat(maxSpreads))
