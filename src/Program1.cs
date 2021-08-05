@@ -6,7 +6,7 @@ namespace coding_exercise_202108
     {
         static void Main(string[] args)
         {
-            new Program<ClimateData, double>().Run(args[0]);
+            new Program<ClimateData>().Run(args[0]);
         }
 
     }

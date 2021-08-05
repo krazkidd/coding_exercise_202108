@@ -4,9 +4,8 @@ using System.Linq;
 
 namespace coding_exercise_202108
 {
-    //TODO is there a way to force ISpread<> without the second type argument V?
-    public class Program<T, V>
-        where T : ISpread<V>, IComparable<T>
+    public class Program<T>
+        where T : IComparable<T>
     {
         public void Run(string filename)
         {
@@ -26,7 +25,7 @@ namespace coding_exercise_202108
             // print all
             foreach (T cd in minSpreads.Concat(maxSpreads))
             {
-                Console.WriteLine(cd.ToSpreadString());
+                Console.WriteLine(cd.ToString());
             }
         }
 

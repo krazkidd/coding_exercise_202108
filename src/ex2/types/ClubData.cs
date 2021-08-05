@@ -4,8 +4,7 @@ using System.Text.Json.Serialization;
 namespace coding_exercise_202108.ex2
 {
     public class ClubData
-        : ISpread<int>
-        , IComparable<ClubData>
+        : IComparable<ClubData>
     {
 
         /// <summary>
@@ -89,22 +88,18 @@ namespace coding_exercise_202108.ex2
             set;
         }
 
-        #region ISpread
-
         public int GetSpread()
         {
             // the absolute difference between goals for and goals against
             return Math.Abs(GoalsFor - GoalsAgainst);
         }
 
-        public string ToSpreadString()
+        public override string ToString()
         {
             return String.Format("{0} {1} {2} {3} {4}", Position, Club, GoalsFor, GoalsAgainst, GetSpread());
         }
 
-        #endregion
-
-                #region IComparable
+        #region IComparable
 
         public int CompareTo(ClubData other)
         {
