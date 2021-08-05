@@ -1,6 +1,9 @@
+using System;
+
 namespace coding_exercise_202108
 {
     public interface ISpread<T>
+        where T : IComparable<T>
     {
 
         // T Max
