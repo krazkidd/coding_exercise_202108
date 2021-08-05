@@ -12,21 +12,30 @@ namespace coding_exercise_202108
             IEnumerable<T> data = JsonReader.ReadFromFile<T>(filename);
 
             // NOTE: I realize I am looping through the data multiple times. Leaving for readability.
+            //       This can be optimized later.
 
-            // get min and max spreads
-            T minSpread = data.Min(cd => cd);
-            T maxSpread = data.Max(cd => cd);
-
-            // get all items with the min spread value
-            IEnumerable<T> minSpreads = data.Where(cd => cd.CompareTo(minSpread) == 0);
-            // get all items with the max spread value
-            IEnumerable<T> maxSpreads = data.Where(cd => cd.CompareTo(maxSpread) == 0);
-
-            // print all
-            foreach (T cd in minSpreads.Concat(maxSpreads))
+            foreach (T val in GetMinimums(data).Concat(GetMaximums(data)))
             {
-                Console.WriteLine(cd.ToString());
+                Console.WriteLine(val.ToString());
             }
+        }
+
+        private IEnumerable<T> GetMinimums(IEnumerable<T> data)
+        {
+            // get min
+            T min = data.Min(cd => cd);
+
+            // return all items with the min value
+            return data.Where(cd => cd.CompareTo(min) == 0);
+        }
+
+        private IEnumerable<T> GetMaximums(IEnumerable<T> data)
+        {
+            // get max
+            T max = data.Max(cd => cd);
+
+            // return all items with the max value
+            return data.Where(cd => cd.CompareTo(max) == 0);
         }
 
     }
