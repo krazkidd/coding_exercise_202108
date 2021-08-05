@@ -5,6 +5,7 @@ namespace coding_exercise_202108.ex2
 {
     public class ClubData
         : ISpread<int>
+        , IComparable<ClubData>
     {
 
         /// <summary>
@@ -99,6 +100,15 @@ namespace coding_exercise_202108.ex2
         public string ToSpreadString()
         {
             return String.Format("{0} {1} {2} {3} {4}", Position, Club, GoalsFor, GoalsAgainst, GetSpread());
+        }
+
+        #endregion
+
+                #region IComparable
+
+        public int CompareTo(ClubData other)
+        {
+            return GetSpread().CompareTo(other.GetSpread());
         }
 
         #endregion

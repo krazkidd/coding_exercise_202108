@@ -5,6 +5,7 @@ namespace coding_exercise_202108.ex1
 {
     public class ClimateData
         : ISpread<double>
+        , IComparable<ClimateData>
     {
 
         [JsonConverter(typeof(ColonialDateConverter))]
@@ -98,5 +99,14 @@ namespace coding_exercise_202108.ex1
 
         #endregion
 
+        #region IComparable
+
+        public int CompareTo(ClimateData other)
+        {
+            return GetSpread().CompareTo(other.GetSpread());
+        }
+
+        #endregion
+        
     }
 }
